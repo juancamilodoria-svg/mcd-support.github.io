@@ -1,0 +1,223 @@
+<!DOCTYPE html> <!-- declaración del tipo de documento HTML5 -->
+<html lang="es">
+<!-- inicio del elemento raíz <html> con atributos de idioma si los hay -->
+
+<head>
+  <!-- inicio de la cabecera <head> con metadatos y enlaces a recursos -->
+  <meta charset="UTF-8" /> <!-- meta que define la codificación de caracteres (charset) -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- meta para controlar la escala en dispositivos móviles (viewport) -->
+  <title>MCD SUPPORT</title> <!-- título de la página mostrado en la pestaña del navegador -->
+  <!-- línea en blanco para legibilidad -->
+  <!-- Normalizar estilos desde cdnjs (cdnjs.cloudflare.com) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+    integrity="sha512-Nhsc8F7dQ3o6YbS84oB9G3Qm8hMZQF2t4+v1JgL7rV2bqvAyWw4Qd1f7M7yN8fT2YcW6W6x6x6x6x6x6x6x6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- enlace a hoja de estilos Normalize desde CDN para estilos base consistentes -->
+  <!-- línea en blanco para legibilidad -->
+  <!-- Íconos de Font Awesome desde cdnjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-S+8eQq8mKzXvQxXv8V3a1mX0W1m4cH2QdZ8k1Q2o6Wv2LJqvC4ZnO6s6fIyD5sY4Y1bKz5nGzQ4yC6Y1bJcYw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- enlace a hoja de estilos de iconos (Font Awesome) desde CDN -->
+  <!-- línea en blanco +para legibilidad -->
+  <!-- Animaciones AOS (Animate On Scroll) desde cdnjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    integrity="sha512-GYrn1zv2wq8wTBzR+o5QqfJv1cSx5V/0wV3Rk6Tq7z7P4sAq2Nwq0o0+6H9Gf+gYJtC0lq+L8i6E5X7fJd3WQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" /> <!-- enlace a hoja de estilos CSS -->
+  <!-- línea en blanco para legibilidad -->
+  <link rel="stylesheet" href="styles.css" /> <!-- enlace a hoja de estilos CSS -->
+</head> <!-- fin de la cabecera del documento -->
+
+<body>
+  <!-- inicio del cuerpo del documento: contenido visible -->
+  <header class="header">
+    <!-- inicio de la cabecera <head> con metadatos y enlaces a recursos -->
+    <nav class="nav container">
+      <!-- navegación principal del sitio -->
+      <a href="#home" class="logo">MCD SUPPORT</a> <!-- enlace de navegación o externo -->
+      <button id="btn-menu" class="btn-menu" aria-label="Abrir menú">
+        <!-- botón interactivo -->
+        <i class="fa-solid fa-bars"></i> <!-- ícono gráfico (posiblemente Font Awesome) -->
+      </button> <!-- marca/elemento HTML -->
+      <ul id="menu" class="menu">
+        <!-- lista de elementos -->
+        <li><a class="nav-link" href="#home">Inicio</a></li> <!-- elemento de lista -->
+        <li><a class="nav-link" href="#about">Sobre Nosotros</a></li> <!-- elemento de lista -->
+        <li><a class="nav-link" href="#products">Servicios</a></li> <!-- elemento de lista -->
+        <li><a class="nav-link" href="#contact">Contacto</a></li> <!-- elemento de lista -->
+        </li> <!-- elemento de lista -->
+      </ul> <!-- marca/elemento HTML -->
+    </nav> <!-- marca/elemento HTML -->
+  </header> <!-- fin de la cabecera del documento -->
+  <!-- línea en blanco para legibilidad -->
+  <main>
+    <!-- contenedor principal del contenido (<main>) -->
+    <section id="home" class="hero container" data-aos="fade-up">
+      <!-- sección de contenido con id 'home' -->
+      <div class="hero__text">
+        <!-- marca/elemento HTML -->
+        <h1>Bienvenido a <span>MCD SUPPORT</span></h1> <!-- encabezado de sección/título -->
+        <p>Somo un grupo de estudiantes que te ayudaran con tus problemas tecnologicos</p> <!-- párrafo de texto -->
+        <div class="cta">
+          <!-- marca/elemento HTML -->
+          <a class="btn primary" href="#about"><i class="fa-solid fa-code"></i> Ver informacion</a>
+          <!-- enlace de navegación o externo -->
+        </div> <!-- marca/elemento HTML -->
+      </div> <!-- marca/elemento HTML -->
+      <div class="hero__img" aria-hidden="true">
+        <!-- marca/elemento HTML -->
+        <img src="img/Frame 1.png" alt="Ilustración de desarrollo web">
+      </div> <!-- marca/elemento HTML -->
+    </section> <!-- marca/elemento HTML -->
+    <!-- línea en blanco para legibilidad -->
+    <section id="about" class="about container" data-aos="fade-up">
+      <!-- sección de contenido con id 'about' -->
+      <h2>Sobre Nosotros</h2> <!-- encabezado de sección/título -->
+      <p>
+        <!-- párrafo de texto -->
+        Somos un grupo de estudiantes que estan terminando una tecnica en sistemas, apasionados por la tecnologia la innovacion y el aprendizaje constante. durante nuestra formacion adquirimos conocimientos en mantenimiento de computadores, redes, programacion, soporte tecnico y herramientas ofimaticas, desarrollando habilidades que nos permiten adaptarnos a diferentes entornos tecnologicos.
+        <!-- marca/elemento HTML -->
+        Nos caracterizamos por el trabajo en equipo, la responsabilidad y el compromiso con cada proyecto que realizamos
+        <!-- marca/elemento HTML -->
+      </p> <!-- marca/elemento HTML -->
+      <ul class="about__stats">
+        <!-- lista de elementos -->
+        <li><i class="fa-solid fa-shield-halved"></i> Seguridad</li> <!-- elemento de lista -->
+        <li><i class="fa-solid fa-gauge-high"></i> Rendimiento</li> <!-- elemento de lista -->
+        <li><i class="fa-solid fa-gauge-high"></i> Mantenimiento</li> <!-- elemento de lista -->
+        <li><i class="fa-solid fa-universal-access"></i> Accesibilidad</li> <!-- elemento de lista -->
+      </ul> <!-- marca/elemento HTML -->
+    </section> <!-- marca/elemento HTML -->
+    <!-- línea en blanco para legibilidad -->
+    <section id="products" class="products container" data-aos="fade-up">
+      <!-- sección de contenido con id 'products' -->
+      <h2>Productos</h2> <!-- encabezado de sección/título -->
+      <div class="grid">
+        <!-- marca/elemento HTML -->
+        <article class="card">
+          <h3>Servicios Realizados</h3> <!-- encabezado de sección/título -->
+          <p>En esta seccion podras encontrar todos los servicios que ofrecemos Mantenimiento, Instalaciones, Reparaciones entre otros </p> <!-- párrafo de texto -->
+          <a href="Servicios.html" class="link">Ver</a> <!-- enlace de navegación o externo -->
+          <img src="img/images.jpg">
+        </article> <!-- marca/elemento HTML -->
+        <article class="card">
+          <!-- marca/elemento HTML -->
+          <h3>Monitores</h3> <!-- encabezado de sección/título -->
+          <p>Tenemos diferentes monitores para que disfrutes de videojuegos, peliculas o videos en la mejor calidad</p> <!-- párrafo de texto -->
+          <a href="monitores.html" class="link">Ver</a> <!-- enlace de navegación o externo -->
+          <img src="img/1366_2000.jpeg">
+        </article> <!-- marca/elemento HTML -->
+        <article class="card">
+          <!-- marca/elemento HTML -->
+          <h3>Mouse</h3> <!-- encabezado de sección/título -->
+          <p>Tenenmos diferentes mouse tanto como para Gaming, oficina o para el uso diario </p> <!-- párrafo de texto -->
+          <a href="mouse.html" class="link">Ver</a> <!-- enlace de navegación o externo -->
+          <img src="img/CATEGORIA-BannerSlider_G_Mouse.webp">
+        </article> <!-- marca/elemento HTML -->
+        <article class="card">
+          <!-- marca/elemento HTML -->
+          <h3>Hardware</h3> <!-- encabezado de sección/título -->
+          <p>Aqui podras visualizar las diferentes memorias RAM, Procesadores, Discos duros, ventiladores entre otros componentes</p> <!-- párrafo de texto -->
+          <a href="hardware.html" class="link">Ver</a> <!-- enlace de navegación o externo -->
+          <img src="img/istockphoto-1397047877-612x612.jpg">
+        </article> <!-- marca/elemento HTML -->
+                <article class="card">
+          <!-- marca/elemento HTML -->
+          <h3>Teclados</h3> <!-- encabezado de sección/título -->
+          <p>Visualiza los diferentes teclados que tenemos para ofrecerte con la mejor calidad y los mejores precios que te podemos ofrecer</p> <!-- párrafo de texto -->
+          <a href="teclados.html" class="link">Ver</a> <!-- enlace de navegación o externo -->
+          <img src="img/teclado-azul-luces-brillantes_23-2149680218.avif">
+        </article> <!-- marca/elemento HTML -->
+      </div> <!-- marca/elemento HTML -->
+    </section> <!-- marca/elemento HTML -->
+    <!-- línea en blanco para legibilidad -->
+    <section id="contact" class="contact container" data-aos="fade-up">
+      <!-- sección de contenido con id 'contact' -->
+      <h2>Contacto</h2> <!-- encabezado de sección/título -->
+      <form id="contact-form" class="form" novalidate>
+        <!-- formulario HTML con campos para enviar mensajes -->
+        <div class="field">
+          <!-- marca/elemento HTML -->
+          <label for="name">Nombre</label> <!-- marca/elemento HTML -->
+          <input id="name" name="name" type="text" placeholder="Tu nombre" required />
+          <!-- campo de entrada de datos (<input>) -->
+          <small class="error"></small> <!-- marca/elemento HTML -->
+        </div> <!-- marca/elemento HTML -->
+        <div class="field">
+          <!-- marca/elemento HTML -->
+          <label for="email">Email</label> <!-- marca/elemento HTML -->
+          <input id="email" name="email" type="email" placeholder="tu@email.com" required />
+          <!-- campo de entrada de datos (<input>) -->
+          <small class="error"></small> <!-- marca/elemento HTML -->
+        </div> <!-- marca/elemento HTML -->
+        <div class="field">
+          <!-- marca/elemento HTML -->
+          <label for="message">Mensaje</label> <!-- marca/elemento HTML -->
+          <textarea id="message" name="message" rows="5" placeholder="¿Cómo puedo ayudarte?" required></textarea>
+          <!-- área de texto para mensajes -->
+          <small class="error"></small> <!-- marca/elemento HTML -->
+        </div> <!-- marca/elemento HTML -->
+       <!-- Botón flotante de WhatsApp -->
+<a href="https://wa.me/573042454293?text=Hola,%20quiero%20más%20información"
+   class="whatsapp-float"
+   target="_blank"
+   title="Contáctanos por WhatsApp">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+         alt="WhatsApp">
+</a>
+
+<style>
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-float img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    transition: transform 0.3s;
+}
+
+.whatsapp-float img:hover {
+    transform: scale(1.1);
+}
+</style>
+        <button type="submit" class="btn primary">
+          <i class="fa-solid fa-paper-plane"></i> Enviar</button>
+
+      <p id="success-message" class="success-message"></p></form> <!-- marca/elemento HTML -->
+    </section> <!-- marca/elemento HTML -->
+  </main> <!-- marca/elemento HTML -->
+  <!-- línea en blanco para legibilidad -->
+  <footer class="footer">
+    <!-- pie de página con información y enlaces sociales -->
+    <div class="container footer__content">
+      <!-- marca/elemento HTML -->
+      <p>Alumnos Juan Camilo Doria - Marcos Sanchez - Daniel Felipe.</p> <!-- párrafo de texto -->
+      <div class="social">
+        <!-- marca/elemento HTML -->
+        <a href="#" aria-label="GitHub"><i class="fa-brands fa-github"></i></a> <!-- enlace de navegación o externo -->
+        <a href="#" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+        <!-- enlace de navegación o externo -->
+        <a href="#" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <!-- enlace de navegación o externo -->
+      </div> <!-- marca/elemento HTML -->
+    </div> <!-- marca/elemento HTML -->
+  </footer> <!-- marca/elemento HTML -->
+  <!-- línea en blanco para legibilidad -->
+  <!-- JS de AOS desde cdnjs -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+    integrity="sha512-1zj1mK6vX6b3J3NwXG0rZ9G8eM9i5Qv1l3m8S4u7T0x5K7w1d8h6d3f4g0h1k2l3m4n5o6p7q8r9s0t1u2v3w=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script> <!-- inclusión de archivo JavaScript externo -->
+  <!-- línea en blanco para legibilidad -->
+  <script src="script.js"></script> <!-- inclusión de archivo JavaScript externo -->
+</body> <!-- fin del cuerpo del documento -->
+
+</html> <!-- fin del documento HTML -->

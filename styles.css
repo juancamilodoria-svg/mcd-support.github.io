@@ -1,0 +1,464 @@
+/* Estilos base */
+:root {
+  /* inicio de reglas CSS para el selector: :root */
+  --bg: #000000e1;
+  /* declaración de propiedad CSS '--bg' */
+  --surface: #161b22;
+  /* declaración de propiedad CSS '--surface' */
+  --text: #e6edf3;
+  /* declaración de propiedad CSS '--text' */
+  --muted: #9da7b3;
+  /* declaración de propiedad CSS '--muted' */
+  --primary: #0077ff;
+  /* declaración de propiedad CSS '--primary' */
+  --primary-600: #0077ff;
+  /* declaración de propiedad CSS '--primary-600' */
+  --outline: #30363d;
+  /* declaración de propiedad CSS '--outline' */
+}
+
+/* fin de bloque de reglas CSS */
+/* línea en blanco para legibilidad */
+* {
+  box-sizing: border-box
+}
+
+/* línea de estilo CSS */
+body {
+  /* inicio de reglas CSS para el selector: body */
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, sans-serif;
+  /* declaración de propiedad CSS 'font-family' */
+  background: var(--bg);
+  /* declaración de propiedad CSS 'background' */
+  color: var(--text);
+  /* declaración de propiedad CSS 'color' */
+  line-height: 1.6;
+  /* declaración de propiedad CSS 'line-height' */
+}
+
+ body{
+    font-family: Arial, sans-serif;
+    background: #000000;
+  }
+
+  .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 50px;
+  }
+
+  .producto{
+    background: rgb(22, 17, 80);
+    width: 220px;
+    border-radius: 18px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0,0,0,0.1);
+    transition: 0.3s;
+  }
+
+  .producto:hover{
+    transform: scale(1.05);
+  }
+
+  .producto img{
+    width: 300%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 18px;
+  }
+
+  .precio{
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+/* fin de bloque de reglas CSS */
+/* línea en blanco para legibilidad */
+img {
+  max-width: 88%;
+  display: block
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.container {
+  /* inicio de reglas CSS para el selector: .container */
+  width: min(1100px, 92%);
+  /* declaración de propiedad CSS 'width' */
+  margin-inline: auto;
+  /* declaración de propiedad CSS 'margin-inline' */
+}
+
+/* fin de bloque de reglas CSS */
+/* línea en blanco para legibilidad */
+.header {
+  /* inicio de reglas CSS para el selector: .header */
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  /* declaración de propiedad CSS 'position' */
+  backdrop-filter: saturate(180%) blur(10px);
+  /* declaración de propiedad CSS 'backdrop-filter' */
+  background: rgba(13, 17, 23, 0.7);
+  /* declaración de propiedad CSS 'background' */
+  border-bottom: 1px solid var(--outline);
+  /* declaración de propiedad CSS 'border-bottom' */
+}
+
+/* fin de bloque de reglas CSS */
+/* línea en blanco para legibilidad */
+.nav {
+  /* inicio de reglas CSS para el selector: .nav */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* declaración de propiedad CSS 'display' */
+  padding: 0.75rem 0;
+  /* declaración de propiedad CSS 'padding' */
+}
+
+/* fin de bloque de reglas CSS */
+/* línea en blanco para legibilidad */
+.logo {
+  font-weight: 700;
+  text-decoration: none;
+  color: var(--text);
+  font-size: 1.1rem
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.btn-menu {
+  background: none;
+  border: 1px solid var(--outline);
+  color: var(--text);
+  padding: .4rem .6rem;
+  border-radius: .5rem;
+  display: none
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.menu {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0
+}
+
+/* línea de estilo CSS */
+.menu a {
+  color: var(--text);
+  text-decoration: none;
+  padding: .5rem .75rem;
+  border-radius: .5rem
+}
+
+/* línea de estilo CSS */
+.menu a:hover {
+  background: var(--surface);
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.hero {
+  /* inicio de reglas CSS para el selector: .hero */
+  display: grid;
+  gap: 2rem;
+  align-items: center;
+  /* declaración de propiedad CSS 'display' */
+  grid-template-columns: 1.2fr 1fr;
+  /* declaración de propiedad CSS 'grid-template-columns' */
+  min-height: 70vh;
+  /* declaración de propiedad CSS 'min-height' */
+  padding: 4rem 0 2rem;
+  /* declaración de propiedad CSS 'padding' */
+}
+
+/* fin de bloque de reglas CSS */
+/* línea en blanco para legibilidad */
+.hero__text h1 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: .2rem 0 1rem
+}
+
+/* línea de estilo CSS */
+.hero__text h1 span {
+  color: var(--primary)
+}
+
+/* línea de estilo CSS */
+.cta {
+  display: flex;
+  gap: .75rem;
+  flex-wrap: wrap
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: .5rem;
+  border: 1px solid var(--outline);
+  padding: .6rem .9rem;
+  border-radius: .6rem;
+  text-decoration: none;
+  color: var(--text)
+}
+
+/* línea de estilo CSS */
+.btn.primary {
+  background: var(--primary);
+  border-color: transparent
+}
+
+/* línea de estilo CSS */
+.btn.primary:hover {
+  background: var(--primary-600)
+}
+
+/* línea de estilo CSS */
+.btn.outline:hover {
+  background: var(--surface)
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.about,
+.products,
+.contact {
+  padding: 3rem 0
+}
+
+/* línea de estilo CSS */
+.about h2,
+.products h2,
+.contact h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.about__stats {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  padding: 0;
+  margin: 1rem 0 0;
+  list-style: none
+}
+
+/* línea de estilo CSS */
+.about__stats li {
+  border: 1px solid var(--outline);
+  padding: .6rem .8rem;
+  border-radius: .6rem;
+  background: var(--surface)
+}
+
+/* línea de estilo CSS */
+.about__stats i {
+  margin-right: .4rem;
+  color: var(--primary)
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.grid {
+  /* inicio de reglas CSS para el selector: .grid */
+  display: grid;
+  gap: 1rem;
+  /* declaración de propiedad CSS 'display' */
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  /* declaración de propiedad CSS 'grid-template-columns' */
+}
+
+/* fin de bloque de reglas CSS */
+/* línea en blanco para legibilidad */
+.card {
+  /* inicio de reglas CSS para el selector: .card */
+  background: var(--surface);
+  /* declaración de propiedad CSS 'background' */
+  border: 1px solid var(--outline);
+  /* declaración de propiedad CSS 'border' */
+  border-radius: 1rem;
+  /* declaración de propiedad CSS 'border-radius' */
+  padding: 1rem;
+  /* declaración de propiedad CSS 'padding' */
+}
+
+/* fin de bloque de reglas CSS */
+.card h3 {
+  margin: .2rem 0 0.4rem
+}
+
+/* línea de estilo CSS */
+.card .link {
+  color: var(--primary);
+  text-decoration: none
+}
+
+/* línea de estilo CSS */
+.card .link:hover {
+  text-decoration: underline
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.form {
+  display: grid;
+  gap: 1rem;
+  max-width: 680px
+}
+
+/* línea de estilo CSS */
+.field {
+  display: grid;
+  gap: .3rem
+}
+
+/* línea de estilo CSS */
+input,
+textarea {
+  /* inicio de reglas CSS para el selector: input,textarea */
+  background: var(--surface);
+  border: 1px solid var(--outline);
+  color: var(--text);
+  /* declaración de propiedad CSS 'background' */
+  padding: .6rem .7rem;
+  border-radius: .6rem;
+  outline: none;
+  /* declaración de propiedad CSS 'padding' */
+}
+
+/* fin de bloque de reglas CSS */
+input:focus,
+textarea:focus {
+  border-color: var(--primary)
+}
+
+/* línea de estilo CSS */
+.error {
+  color: #ffb4b4;
+  font-size: .85rem;
+  height: 1rem
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+.footer {
+  /* inicio de reglas CSS para el selector: .footer */
+  border-top: 1px solid var(--outline);
+  /* declaración de propiedad CSS 'border-top' */
+  padding: 1.2rem 0;
+  margin-top: 2rem;
+  background: rgba(22, 27, 34, .8)
+    /* línea de estilo CSS */
+}
+
+/* fin de bloque de reglas CSS */
+.footer__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap
+}
+
+/* línea de estilo CSS */
+.social {
+  display: flex;
+  gap: .75rem
+}
+
+/* línea de estilo CSS */
+.social a {
+  color: var(--muted)
+}
+
+/* línea de estilo CSS */
+.social a:hover {
+  color: var(--text)
+}
+
+/* línea de estilo CSS */
+/* línea en blanco para legibilidad */
+@media (max-width: 820px) {
+
+  /* inicio de reglas CSS para el selector: @media (max-width: 820px) */
+  .btn-menu {
+    display: inline-flex
+  }
+
+  /* línea de estilo CSS */
+  .menu {
+    position: absolute;
+    right: 4%;
+    top: 60px;
+    background: var(--surface);
+    border: 1px solid var(--outline);
+    border-radius: .8rem;
+    padding: .6rem;
+    display: none;
+    flex-direction: column
+  }
+
+  /* línea de estilo CSS */
+  .menu.open {
+    display: flex
+  }
+
+  /* línea de estilo CSS */
+  .hero {
+    grid-template-columns: 1fr
+  }
+
+  /* línea de estilo CSS */
+}
+
+/* fin de bloque de reglas CSS */
+
+/* Botones del menú */
+.nav-link{
+  transition: 0.3s ease;
+  border: 1px solid transparent;
+}
+
+.nav-link:hover{
+  background: #00eeff;
+  color: white;
+  border-color: #00eeff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgb(0, 225, 255);
+}
+
+/* Mensaje de éxito */
+.success-message{
+    display: none;
+    color: #4cff72;
+    font-weight: bold;
+    margin-top: 15px;
+    text-align: center;
+    font-size: 16px;
+}
+.product-image{
+    width: 100%;
+    max-width: 200px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 20px;
+    transition: 0.3s;
+}
+
+.product-image:hover{
+    transform: scale(1.03);
+}
+
